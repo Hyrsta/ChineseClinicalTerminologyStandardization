@@ -1,0 +1,140 @@
+m1d0_MtrainDdev_v1.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=5 min_count=1, workers=8)
+
+对dev.json
+true_pos: 893
+pos_pred: 1902
+total_data: 3542
+
+precision:0.4695057833859096
+recall:0.2521174477696217
+f1_score:0.3280675973548861
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v2.json
+model = Word2Vec(sentences=sentences, vector_size=200, window=5, min_count=1, workers=8, epochs=10, sg=1,
+                 hs=1, negative=10)
+
+true_pos: 350
+pos_pred: 1902
+total_data: 3542
+
+precision:0.18401682439537329
+recall:0.09881422924901186
+f1_score:0.12858192505510652
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v3.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=5, min_count=1, workers=8, epochs=10, sg=1,
+                 hs=1, negative=10)
+
+true_pos: 330
+pos_pred: 1902
+total_data: 3542
+
+precision:0.17350157728706625
+recall:0.09316770186335403
+f1_score:0.12123438648052903
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v4.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=5, min_count=1, workers=8, epochs=10)
+
+true_pos: 736
+pos_pred: 1902
+total_data: 3542
+
+precision:0.38696109358569925
+recall:0.2077922077922078
+f1_score:0.2703894195444526
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v5.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=8 min_count=1, workers=8)
+
+true_pos: 896
+pos_pred: 1902
+total_data: 3542
+
+precision:0.47108307045215564
+recall:0.25296442687747034
+f1_score:0.3291697281410727
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v6.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=10, min_count=1, workers=8, epochs=5)
+
+true_pos: 896
+pos_pred: 1902
+total_data: 3542
+
+precision:0.47108307045215564
+recall:0.25296442687747034
+f1_score:0.3291697281410727
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v7.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=8, min_count=1, workers=8, epochs=4)
+
+dev_single_Mtrain_v7
+true_pos: 787
+pos_pred: 1902
+total_data: 3542
+
+precision:0.4137749737118822
+recall:0.22219085262563523
+f1_score:0.2891256429096253
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v8.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=8, min_count=1, workers=8, epochs=4)
+
+dev_single_Mtrain_v8
+true_pos: 902
+pos_pred: 1902
+total_data: 3542
+
+precision:0.47423764458464773
+recall:0.2546583850931677
+f1_score:0.331373989713446
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v9.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=8, min_count=1, workers=8, epochs=3)
+
+dev_single_Mtrain_v9
+true_pos: 912
+pos_pred: 1902
+total_data: 3542
+
+precision:0.4794952681388013
+recall:0.2574816487859966
+f1_score:0.33504775900073475
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v10.json
+model = Word2Vec(sentences=sentences, vector_size=300, window=8, min_count=1, workers=8, epochs=2)
+
+dev_single_Mtrain_v10
+true_pos: 919
+pos_pred: 1902
+total_data: 3542
+
+precision:0.4831756046267087
+recall:0.25945793337097683
+f1_score:0.33761939750183684
+
+------------------------------------------------------------------------------------------------------
+m1d0_MtrainDdev_v11.json
+model = Word2Vec(sentences=sentences, vector_size=200, window=8, min_count=1, workers=8, epochs=2)
+
+dev_single_Mtrain_v11
+true_pos: 904
+pos_pred: 1902
+total_data: 3542
+
+precision:0.47528916929547843
+recall:0.2552230378317335
+f1_score:0.3321087435709038
+
+总结：v10的模型参数效果最好

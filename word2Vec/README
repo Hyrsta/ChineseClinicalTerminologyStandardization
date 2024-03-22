@@ -1,0 +1,18 @@
+本项目使用python语言完成，以下是需要安装的库：
+pip install scikit-learn
+pip install jieba
+pip install numpy
+pip install json
+pip install numpy
+pip install gensim
+pip install openpyxl
+
+源代码包括pre.py(包含预处理数据的函数）, model.py(包含与模型有关的函数), model_train.py(训练模型的代码文件),
+model_predict.py(生成预测答案的代码文件), f1score.py(计算预测答案的f1值的代码文件)，main.py（生成对test.py的预测答案的代码文件）
+
+dataset目录包含题目所给的数据集
+model目录包含model_train.py所生成的模型
+prediction目录包含model_predict.py所生成的预测答案，分为3个目录，即distance_comparison, parameter_comparison和 prednum_conparison。
+里面json文件名字代表的意义：m1d0表示最多一个预测答案且最少距离为0，Ddev_v10，表示使用第10模型且计算相似度是针对dev.json的normalized_result的
+
+test_answer.json是针对test.json由第10模型，最多两个预测答案且最少距离为0生成的预测答案

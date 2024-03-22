@@ -1,0 +1,9 @@
+本项目使用python语言完成，以下是需要安装的库：
+pip install gensim torch transformers jieba nltk numpy scipy pandas
+
+源代码包括pre.py(包含预处理数据的函数)与bert.ipynb(处理过程，不含F1计算)
+源代码运行需要修改所有的相对文件路径
+
+dataset目录包含题目所给的数据集以及存储下来的词嵌入csv
+model目录下包含bert_base_chinese本地模型
+tested.json包含生成的测试文件，用于计算F1
